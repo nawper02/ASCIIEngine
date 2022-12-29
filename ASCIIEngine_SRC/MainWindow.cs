@@ -9,17 +9,30 @@ namespace ASCIIEngine_SRC
             //Init();
         }
 
-        public void Draw()
+        public void Run()
         {
-            Console.SetCursorPosition(0, 0);
-            for (int i = 0; i < rows; i++)
+            while (true)
             {
-                for (int j = 0; j < cols; j++)
-                { 
-                    Console.ForegroundColor = buffer[i, j].color;
-                    Console.Write(buffer[i, j].c);
+                Console.SetCursorPosition(0, 0);
+                for (int i = 0; i < rows; i++)
+                {
+                    for (int j = 0; j < cols; j++)
+                    {
+                        Console.ForegroundColor = buffer[i, j].color;
+                        Console.Write(buffer[i, j].c);
+                    }
+                    if (!(i == rows - 1)) Console.WriteLine();
                 }
-                if (!(i == rows-1)) Console.WriteLine();
+
+                HandleEvents();
+            }
+        }
+        public void HandleEvents()
+        {
+            ConsoleKeyInfo keyInfo = Console.ReadKey();
+            foreach (Interactive i in interactables)
+            {
+                i.HandleKeyPress(keyInfo);
             }
         }
     }
