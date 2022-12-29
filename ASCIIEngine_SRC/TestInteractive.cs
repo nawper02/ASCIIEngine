@@ -7,8 +7,10 @@ namespace ASCIIEngine_SRC
     {
         public string s;
         public ConsoleColor color;
+        public bool IsRed;
         public InteractiveLabel(string s, ConsoleColor color, int row, int col) : base(1, s.Length, row, col)
         {
+            this.IsRed = false;
             this.s = s;
             this.color = color;
             this.AddAction(ConsoleKey.Q, () => { ChangeColor(); });
@@ -24,11 +26,22 @@ namespace ASCIIEngine_SRC
         }
         public void ChangeColor()
         {
-            for (int i = 0; i < s.Length; i++)
+            if (!IsRed)
             {
-                buffer[0, i].color = ConsoleColor.Red;
+                for (int i = 0; i < s.Length; i++)
+                {
+                    buffer[0, i].color = ConsoleColor.Red;
+                    IsRed = true;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < s.Length; i++)
+                {
+                    buffer[0, i].color = ConsoleColor.White;
+                    IsRed = false;
+                }
             }
         }
-
     }
 }
