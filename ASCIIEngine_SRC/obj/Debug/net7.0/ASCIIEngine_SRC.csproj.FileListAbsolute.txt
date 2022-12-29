@@ -1,0 +1,12 @@
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\bin\Debug\net7.0\ASCIIEngine_SRC.deps.json
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\bin\Debug\net7.0\ASCIIEngine_SRC.dll
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\bin\Debug\net7.0\ASCIIEngine_SRC.pdb
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\obj\Debug\net7.0\ASCIIEngine_SRC.csproj.AssemblyReference.cache
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\obj\Debug\net7.0\ASCIIEngine_SRC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\obj\Debug\net7.0\ASCIIEngine_SRC.AssemblyInfoInputs.cache
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\obj\Debug\net7.0\ASCIIEngine_SRC.AssemblyInfo.cs
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\obj\Debug\net7.0\ASCIIEngine_SRC.csproj.CoreCompileInputs.cache
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\obj\Debug\net7.0\ASCIIEngine_SRC.dll
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\obj\Debug\net7.0\refint\ASCIIEngine_SRC.dll
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\obj\Debug\net7.0\ASCIIEngine_SRC.pdb
+C:\Users\Kin\source\repos\ASCIIEngine\ASCIIEngine_SRC\obj\Debug\net7.0\ref\ASCIIEngine_SRC.dll

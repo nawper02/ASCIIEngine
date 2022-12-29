@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ASCIIEngine/1.0.0": {
+        "dependencies": {
+          "ASCIIEngine_SRC": "1.0.0"
+        },
+        "runtime": {
+          "ASCIIEngine.dll": {}
+        }
+      },
+      "ASCIIEngine_SRC/1.0.0": {
+        "runtime": {
+          "ASCIIEngine_SRC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ASCIIEngine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ASCIIEngine_SRC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
