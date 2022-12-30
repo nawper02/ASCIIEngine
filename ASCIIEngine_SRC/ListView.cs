@@ -11,8 +11,9 @@ namespace ASCIIEngine_SRC
         public ListView(List<string> strings, int row, int col) : base(strings.Count, strings.Max(s => s.Length), row, col)
         {
             this.strings = strings;
-            this.LV_Actions = new();
-            
+            // make lv actions new with same length as strings
+            this.LV_Actions = Enumerable.Repeat<Action>(null, strings.Count).ToList();
+
             this.AddAction(ConsoleKey.DownArrow, () => { CycleActiveDown(); });
             this.AddAction(ConsoleKey.UpArrow, () => { CycleActiveUp(); });
             this.AddAction(ConsoleKey.Enter, () => { Select(); });
@@ -80,5 +81,13 @@ namespace ASCIIEngine_SRC
 
         }
 
+        public void TestAction()
+        {
+            for (int i = 0; i < strings.Max(s => s.Length); i++)
+            {
+                buffer[activeIndex, i].color = ConsoleColor.Red;
+            }
+
+        }
     }
 }

@@ -23,13 +23,17 @@ namespace ConsoleApp
             List<string> strings = new();
             strings.Add("Item 1");
             strings.Add("Item 2");
-            strings.Add("Item 3");
+            
             ListView lv = new(strings, 2, 2);
+            lv.SetAction(0, i2.ChangeColor);
+            lv.SetAction(1, i.ChangeColor);
+
 
             p.AddElement(lv);
             p2.AddElement(i2);
             mw.AddPanel(p);
             mw.AddPanel(p2);
+            mw.AddElement(i);
 
             mw.Run();
 
