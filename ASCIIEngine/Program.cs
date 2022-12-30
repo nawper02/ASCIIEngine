@@ -1,5 +1,6 @@
 ﻿using ASCIIEngine_SRC;
 using System;
+using System.Security.Cryptography;
 
 namespace ConsoleApp
 {
@@ -18,11 +19,14 @@ namespace ConsoleApp
 
             Panel p = new(23, 50, 20, 45, " Panel 1 ");
             Panel p2 = new(10, 30, 30, 5, " Panel 2 ");
-            // create a panel that fits inside panel 1
-            Panel p3 = new(10, 30, 2, 2, " Panel 3 ");
-            p3.AddElement(i);
 
-            p.AddElement(p3);
+            List<string> strings = new();
+            strings.Add("Item 1");
+            strings.Add("Item 2");
+            strings.Add("Item 3");
+            ListView lv = new(strings, 2, 2);
+
+            p.AddElement(lv);
             p2.AddElement(i2);
             mw.AddPanel(p);
             mw.AddPanel(p2);
